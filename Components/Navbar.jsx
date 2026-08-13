@@ -18,7 +18,7 @@ const Navbar = () => {
       }
 
       // Check which section is in view
-      const sections = ["home", "about", "menu", "Why Choose", "contact"];
+      const sections = ["home", "about", "menu", "why-choose", "contact"];
       const scrollPosition = window.scrollY + 120; // offset
 
       for (const section of sections) {
@@ -42,7 +42,7 @@ const Navbar = () => {
     { label: "HOME", id: "home" },
     { label: "ABOUT US", id: "about" },
     { label: "MENU", id: "menu" },
-    { label: "WHY CHOOSE US", id: "Why Choose" },
+    { label: "WHY CHOOSE US", id: "why-choose" },
     { label: "CONTACT", id: "contact" },
   ];
 

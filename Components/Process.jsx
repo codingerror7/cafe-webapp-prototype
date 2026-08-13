@@ -73,7 +73,7 @@ const Process = () => {
         <span className="text-accent font-sans text-[10px] tracking-[0.25em] font-black uppercase block mb-3.5">
           — OUR PROCESS
         </span>
-        <h2 className="font-serif font-black text-3xl md:text-4xl lg:text-[40px] leading-[1.15] text-secondary mb-5 tracking-tight">
+        <h2 className="font-serif font-black text-3xl md:text-4xl lg:text-[45px] leading-[1.15] text-secondary mb-5 tracking-tight">
           From Bean to Cup,<br className="hidden sm:inline" /> Crafted with Passion
         </h2>
         <p className="text-secondary/70 text-xs md:text-sm leading-relaxed max-w-md mx-auto">
@@ -84,15 +84,8 @@ const Process = () => {
 
       {/* Horizontal Timeline Container */}
       <div className="relative w-full overflow-hidden px-1.5">
-        {/* Style block to cleanly hide webkit scrollbars */}
-        <style jsx="true">{`
-          .no-scrollbar::-webkit-scrollbar {
-            display: none;
-          }
-        `}</style>
-        
         <div 
-          className="no-scrollbar overflow-x-auto scroll-smooth snap-x snap-mandatory flex flex-nowrap justify-start lg:justify-between gap-8 lg:gap-0 py-8 relative z-10 w-full"
+          className="overflow-x-auto scroll-smooth snap-x snap-mandatory flex flex-nowrap justify-start lg:justify-between gap-8 lg:gap-0 py-8 relative z-10 w-full [scrollbar-width:none] [-ms-overflow-style:none]"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {/* Connector Line behind numbers (Desktop) */}
@@ -114,7 +107,7 @@ const Process = () => {
               className="w-[260px] sm:w-[280px] lg:w-[20%] flex-shrink-0 lg:flex-shrink flex flex-col items-center text-center snap-center relative z-10 px-3 group"
             >
               {/* Large low-opacity number */}
-              <span className="font-serif font-black text-6xl md:text-7xl text-green-900 mb-3 tracking-tighter select-none transition-all duration-300 group-hover:text-primary/15 group-hover:scale-105">
+              <span className="font-serif font-black text-6xl md:text-7xl text-green-900 mb-3 tracking-tighter select-none transition-all duration-300 group-hover:text-brown-900 group-hover:scale-105">
                 {step.number}
               </span>
 

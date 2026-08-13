@@ -9,7 +9,9 @@ import About from "./About";
 import Process from "./Process";
 import WhyChoose from "./WhyChoose";
 import Contact from "./Contact";
+import Visit from "./Visit.jsx";
 import Footer from "./Footer";
+import FloatingCTA from "./Floating";
 
 // Custom coffee bean decorative SVG
 const CoffeeBean = ({ className }) => (
@@ -26,6 +28,8 @@ const CoffeeBean = ({ className }) => (
 );
 
 const Home = () => {
+
+
   return (
     <div className="min-h-screen bg-[#FAF6F0] text-secondary font-sans antialiased overflow-x-hidden">
       {/* Navigation */}
@@ -171,72 +175,174 @@ const Home = () => {
       </section>
 
       {/* Features Bar */}
-      <section className="relative z-20 px-4 md:px-8 max-w-7xl mx-auto -mt-4 md:-mt-8 mb-20">
-        <div className="bg-white border border-secondary/5 rounded-[24px] md:rounded-[32px] shadow-[0_12px_40px_rgba(44,30,22,0.03)] px-6 py-8 md:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-secondary/10">
-          
-          {/* Feature 1 */}
-          <div className="flex flex-col items-center text-center px-4 pt-4 sm:pt-0 transition-transform duration-300 hover:translate-y-[-2px]">
-            <div className="w-12 h-12 rounded-[16px] bg-[#EBF1EC] text-primary flex items-center justify-center mb-4 shadow-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-                <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
-                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
-                <line x1="6" y1="2" x2="6" y2="4" />
-                <line x1="10" y1="2" x2="10" y2="4" />
-                <line x1="14" y1="2" x2="14" y2="4" />
-              </svg>
-            </div>
-            <h3 className="font-serif font-extrabold text-[15px] text-secondary mb-1.5">Quality Coffee</h3>
-            <p className="text-secondary/65 text-xs leading-relaxed max-w-[200px]">
-              We source the finest beans from around the world.
-            </p>
-          </div>
+      <section className="relative z-20 px-4 md:px-8 max-w-7xl mx-auto -mt-8 md:-mt-10 mb-24">
 
-          {/* Feature 2 */}
-          <div className="flex flex-col items-center text-center px-4 pt-6 sm:pt-0 transition-transform duration-300 hover:translate-y-[-2px]">
-            <div className="w-12 h-12 rounded-[16px] bg-[#EBF1EC] text-primary flex items-center justify-center mb-4 shadow-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
-                <path d="M12 6C12 6 9 9 9 12C9 15 12 18 12 18C12 18 15 15 15 12C15 9 12 6 12 6Z" fill="currentColor" fillOpacity="0.2" className="text-primary" />
-              </svg>
-            </div>
-            <h3 className="font-serif font-extrabold text-[15px] text-secondary mb-1.5">Expertly Brewed</h3>
-            <p className="text-secondary/65 text-xs leading-relaxed max-w-[200px]">
-              Perfectly brewed by our skilled baristas.
-            </p>
-          </div>
+  <div className="relative overflow-hidden rounded-[32px] border border-[#ECE7E1] bg-white shadow-[0_25px_70px_rgba(20,20,20,0.06)]">
 
-          {/* Feature 3 */}
-          <div className="flex flex-col items-center text-center px-4 pt-6 sm:pt-0 transition-transform duration-300 hover:translate-y-[-2px]">
-            <div className="w-12 h-12 rounded-[16px] bg-[#EBF1EC] text-primary flex items-center justify-center mb-4 shadow-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78v0Z" />
-              </svg>
-            </div>
-            <h3 className="font-serif font-extrabold text-[15px] text-secondary mb-1.5">Made with Love</h3>
-            <p className="text-secondary/65 text-xs leading-relaxed max-w-[200px]">
-              Every cup is made with passion and care.
-            </p>
-          </div>
+    {/* Decorative Blur */}
+    <div className="absolute -top-32 -left-24 w-72 h-72 rounded-full bg-primary/5 blur-3xl"></div>
+    <div className="absolute -bottom-32 -right-24 w-80 h-80 rounded-full bg-secondary/5 blur-3xl"></div>
 
-          {/* Feature 4 */}
-          <div className="flex flex-col items-center text-center px-4 pt-6 sm:pt-0 transition-transform duration-300 hover:translate-y-[-2px]">
-            <div className="w-12 h-12 rounded-[16px] bg-[#EBF1EC] text-primary flex items-center justify-center mb-4 shadow-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-                <path d="M18 8H19C20.1046 8 21 8.89543 21 10V14C21 15.1046 20.1046 16 19 16H18" />
-                <path d="M5 8H18V18C18 19.1046 17.1046 20 16 20H7C5.89543 20 5 19.1046 5 18V8Z" />
-                <path d="M7 2L9 5" />
-                <path d="M11 2L12 5" />
-                <path d="M15 2L14 5" />
-              </svg>
-            </div>
-            <h3 className="font-serif font-extrabold text-[15px] text-secondary mb-1.5">Fast & Friendly</h3>
-            <p className="text-secondary/65 text-xs leading-relaxed max-w-[200px]">
-              Quick service with a smile, every time.
-            </p>
+    <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+
+      {/* CARD 1 */}
+
+      <div className="group relative px-8 py-12 border-b sm:border-r sm:border-b border-[#F1ECE7] transition-all duration-500 hover:bg-[#FCFBFA]">
+
+        <div className="relative w-fit mx-auto">
+
+          <div className="absolute inset-0 rounded-3xl bg-primary/10 blur-xl scale-125 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+          <div className="relative w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F3F8F3] to-[#E8F1EA] border border-[#E4ECE5] flex items-center justify-center shadow-sm group-hover:scale-110 group-hover:-translate-y-1 transition duration-500">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-6 h-6 text-primary"
+            >
+              <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+              <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+              <line x1="6" y1="2" x2="6" y2="4" />
+              <line x1="10" y1="2" x2="10" y2="4" />
+              <line x1="14" y1="2" x2="14" y2="4" />
+            </svg>
+
           </div>
 
         </div>
-      </section>
+
+        <h3 className="mt-8 text-center text-[18px] font-serif font-bold text-secondary">
+          Quality Coffee
+        </h3>
+
+        <p className="mt-3 text-center text-[14px] leading-7 text-secondary/65 max-w-[220px] mx-auto">
+          We carefully source exceptional beans from trusted farms around the world for every cup.
+        </p>
+
+      </div>
+
+      {/* CARD 2 */}
+
+      <div className="group relative px-8 py-12 border-b lg:border-r border-[#F1ECE7] transition-all duration-500 hover:bg-[#FCFBFA]">
+
+        <div className="relative w-fit mx-auto">
+
+          <div className="absolute inset-0 rounded-3xl bg-primary/10 blur-xl scale-125 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+          <div className="relative w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F3F8F3] to-[#E8F1EA] border border-[#E4ECE5] flex items-center justify-center shadow-sm group-hover:scale-110 group-hover:-translate-y-1 transition duration-500">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-6 h-6 text-primary"
+            >
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
+              <path d="M12 6C12 6 9 9 9 12C9 15 12 18 12 18C12 18 15 15 15 12C15 9 12 6 12 6Z" />
+            </svg>
+
+          </div>
+
+        </div>
+
+        <h3 className="mt-8 text-center text-[18px] font-serif font-bold text-secondary">
+          Expertly Brewed
+        </h3>
+
+        <p className="mt-3 text-center text-[14px] leading-7 text-secondary/65 max-w-[220px] mx-auto">
+          Every drink is handcrafted by skilled baristas using precision brewing techniques.
+        </p>
+
+      </div>
+
+      {/* CARD 3 */}
+
+      <div className="group relative px-8 py-12 border-b sm:border-r lg:border-b-0 border-[#F1ECE7] transition-all duration-500 hover:bg-[#FCFBFA]">
+
+        <div className="relative w-fit mx-auto">
+
+          <div className="absolute inset-0 rounded-3xl bg-primary/10 blur-xl scale-125 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+          <div className="relative w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F3F8F3] to-[#E8F1EA] border border-[#E4ECE5] flex items-center justify-center shadow-sm group-hover:scale-110 group-hover:-translate-y-1 transition duration-500">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-6 h-6 text-primary"
+            >
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z" />
+            </svg>
+
+          </div>
+
+        </div>
+
+        <h3 className="mt-8 text-center text-[18px] font-serif font-bold text-secondary">
+          Made with Passion
+        </h3>
+
+        <p className="mt-3 text-center text-[14px] leading-7 text-secondary/65 max-w-[220px] mx-auto">
+          Crafted with attention to detail, ensuring consistency and warmth in every serving.
+        </p>
+
+      </div>
+
+      {/* CARD 4 */}
+
+      <div className="group relative px-8 py-12 transition-all duration-500 hover:bg-[#FCFBFA]">
+
+        <div className="relative w-fit mx-auto">
+
+          <div className="absolute inset-0 rounded-3xl bg-primary/10 blur-xl scale-125 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+          <div className="relative w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F3F8F3] to-[#E8F1EA] border border-[#E4ECE5] flex items-center justify-center shadow-sm group-hover:scale-110 group-hover:-translate-y-1 transition duration-500">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-6 h-6 text-primary"
+            >
+              <path d="M18 8H19C20.1046 8 21 8.89543 21 10V14C21 15.1046 20.1046 16 19 16H18" />
+              <path d="M5 8H18V18C18 19.1046 17.1046 20 16 20H7C5.89543 20 5 19.1046 5 18V8Z" />
+              <path d="M7 2L9 5" />
+              <path d="M11 2L12 5" />
+              <path d="M15 2L14 5" />
+            </svg>
+
+          </div>
+
+        </div>
+
+        <h3 className="mt-8 text-center text-[18px] font-serif font-bold text-secondary">
+          Fast & Friendly
+        </h3>
+
+        <p className="mt-3 text-center text-[14px] leading-7 text-secondary/65 max-w-[220px] mx-auto">
+          Enjoy quick service and genuine hospitality from the moment you walk in.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Menu / Specials Section (Signature Collection) */}
       <Menu />
@@ -253,8 +359,12 @@ const Home = () => {
       {/* Contact Section (Coffee Club Newsletter) */}
       <Contact />
 
+      <Visit/>
+
       {/* Footer */}
       <Footer />
+
+      <FloatingCTA/>
     </div>
   );
 };

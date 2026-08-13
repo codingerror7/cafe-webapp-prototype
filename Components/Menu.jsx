@@ -47,17 +47,17 @@ const Menu = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 md:gap-8 items-center h-full">
             {/* Left Content column */}
-            <div className="sm:col-span-6 flex flex-col justify-between h-full min-h-[220px] relative z-10">
+            <div className="sm:col-span-6 flex flex-col justify-between h-full min-h-[240px] relative z-10">
               <div>
-                <span className="text-accent font-sans text-[10px] tracking-[0.25em] font-black uppercase block mb-3.5">
+                <span className="text-accent font-sans text-[13px] tracking-[0.25em] font-black uppercase block mb-3.5">
                   — OUR SIGNATURE
                 </span>
                 
-                <h2 className="font-serif font-extrabold text-3xl lg:text-[36px] leading-[1.12] text-white mb-4 tracking-tight">
+                <h2 className="font-serif font-extrabold text-3xl lg:text-[40px] leading-[1.12] text-white mb-4 tracking-tight">
                   Explore Our<br />Coffee Collection
                 </h2>
                 
-                <p className="text-white/70 text-xs leading-relaxed mb-6 max-w-[220px]">
+                <p className="text-white/70 text-sm leading-relaxed mb-6 max-w-[240px]">
                   From rich espressos to creamy lattes, find your perfect cup.
                 </p>
               </div>
@@ -131,10 +131,10 @@ const Menu = () => {
             
             {/* Info */}
             <div className="px-1">
-              <h3 className="font-serif font-black text-lg mb-1.5 text-secondary">
+              <h3 className="font-serif font-black text-xl mb-1.5 text-secondary">
                 {cards[1].name}
               </h3>
-              <p className="text-secondary/60 text-xs leading-relaxed mb-4 min-h-[36px]">
+              <p className="text-secondary/60 text-sm leading-relaxed mb-4 min-h-[36px]">
                 {cards[1].description}
               </p>
             </div>
@@ -166,10 +166,10 @@ const Menu = () => {
             
             {/* Info */}
             <div className="px-1">
-              <h3 className="font-serif font-black text-lg mb-1.5 text-secondary">
+              <h3 className="font-serif font-black text-xl mb-1.5 text-secondary">
                 {cards[2].name}
               </h3>
-              <p className="text-secondary/60 text-xs leading-relaxed mb-4 min-h-[36px]">
+              <p className="text-secondary/60 text-sm leading-relaxed mb-4 min-h-[36px]">
                 {cards[2].description}
               </p>
             </div>

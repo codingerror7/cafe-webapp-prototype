@@ -28,10 +28,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 pt-10 pb-8 relative z-10">
         
         {/* Main Footer columns grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-6 pb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-12">
           
-          {/* Column 1: Brand Info (3.5 of 12 cols on desktop) */}
-          <div className="lg:col-span-3.5 flex flex-col items-start gap-4 pr-4">
+          {/* Column 1: Brand Info */}
+          <div className="flex flex-col items-start gap-4 pr-2">
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="text-white w-9 h-9 flex items-center justify-center">
@@ -68,8 +68,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Column 2: Quick Links (2 of 12 cols) */}
-          <div className="lg:col-span-2 flex flex-col items-start gap-4">
+          {/* Column 2: Quick Links */}
+          <div className="flex flex-col items-start gap-4">
             <h3 className="font-sans text-[10px] tracking-[0.2em] font-black uppercase text-[#DEBA90]">
               QUICK LINKS
             </h3>
@@ -93,8 +93,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Help & Support (2 of 12 cols) */}
-          <div className="lg:col-span-2 flex flex-col items-start gap-4">
+          {/* Column 3: Help & Support */}
+          <div className="flex flex-col items-start gap-4">
             <h3 className="font-sans text-[10px] tracking-[0.2em] font-black uppercase text-[#DEBA90]">
               HELP & SUPPORT
             </h3>
@@ -111,8 +111,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Contact Us (2.5 of 12 cols) */}
-          <div className="lg:col-span-2.5 flex flex-col items-start gap-4">
+          {/* Column 4: Contact Us */}
+          <div className="flex flex-col items-start gap-4">
             <h3 className="font-sans text-[10px] tracking-[0.2em] font-black uppercase text-[#DEBA90]">
               CONTACT US
             </h3>
@@ -134,8 +134,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 5: Follow Us (2 of 12 cols) */}
-          <div className="lg:col-span-2 flex flex-col items-start gap-4">
+          {/* Column 5: Follow Us */}
+          <div className="flex flex-col items-start gap-4">
             <h3 className="font-sans text-[10px] tracking-[0.2em] font-black uppercase text-[#DEBA90]">
               FOLLOW US
             </h3>

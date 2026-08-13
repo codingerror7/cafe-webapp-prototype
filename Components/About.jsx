@@ -59,54 +59,139 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-16 px-4 md:px-8 max-w-7xl mx-auto scroll-mt-24">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        {/* Left Column Content - 4 of 12 cols on desktop */}
-        <div className="lg:col-span-4 flex flex-col items-start text-left pl-2">
-          <span className="text-accent font-sans text-[10px] tracking-[0.25em] font-black uppercase block mb-3.5">
-            — WHY CHOOSE US
-          </span>
-          
-          <h2 className="font-serif font-black text-3xl md:text-4xl lg:text-[40px] leading-[1.12] text-secondary mb-5 tracking-tight">
-            More Than <br className="hidden md:inline" /> Just Coffee
-          </h2>
-          
-          <p className="text-secondary/70 text-xs md:text-sm leading-relaxed mb-8 max-w-sm">
-            We're passionate about bringing you the best coffee experience, every single day.
-          </p>
+    <section
+      id="about"
+      className="relative overflow-hidden py-24 md:py-32 px-4 md:px-8 scroll-mt-24"
+    >
+      {/* Background Decorations */}
+      <div className="absolute -top-32 left-0 w-96 h-96 rounded-full bg-primary/5 blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-[#ECE7DF] blur-3xl opacity-70"></div>
 
-          <button className="bg-primary hover:bg-[#2b3e2d] text-white flex items-center gap-2.5 pl-6 pr-5 py-3.5 rounded-full text-[11px] font-extrabold font-sans tracking-widest transition-all duration-300 shadow-[0_4px_12px_rgba(31,46,33,0.15)] hover:shadow-[0_6px_16px_rgba(31,46,33,0.25)] hover:-translate-y-0.5 cursor-pointer uppercase">
-            LEARN MORE
-            <span className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center">
-              <FiArrowRight className="w-3.5 h-3.5 text-white" />
-            </span>
-          </button>
-        </div>
+      <div className="relative max-w-7xl mx-auto">
 
-        {/* Right Column Grid - 8 of 12 cols on desktop */}
-        <div className="lg:col-span-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 lg:divide-x divide-secondary/10">
-            {features.map((feature, index) => (
-              <div key={index} className="flex flex-col items-center text-center px-4 pt-6 sm:pt-0 first:pt-0 transition-transform duration-300 hover:translate-y-[-2px]">
-                {/* Organic Pebble/Blob Background for Icon */}
-                <div 
-                  className="w-16 h-16 bg-[#E2EBE5] text-primary flex items-center justify-center mb-5 transition-all duration-300 hover:scale-105 shadow-sm hover:shadow hover:bg-primary hover:text-white"
-                  style={{ borderRadius: "55% 45% 60% 40% / 40% 55% 45% 60%" }}
-                >
-                  {feature.icon}
-                </div>
-                
-                <h3 className="font-serif font-extrabold text-[15px] text-secondary mb-2">
-                  {feature.title}
+        <div className="grid lg:grid-cols-12 gap-16 items-center">
+
+          {/* ================= LEFT ================= */}
+
+          <div className="lg:col-span-4">
+
+            <div className="flex items-center gap-4 mb-7">
+              <span className="w-14 h-[2px] bg-primary"></span>
+
+              <span className="uppercase tracking-[0.35em] text-[12px] font-black text-accent">
+                Why Choose Us
+              </span>
+            </div>
+
+            <h2 className="font-serif text-[42px] md:text-[50px] leading-[1.05] font-black text-secondary">
+              More Than
+              <br />
+              Just Coffee
+            </h2>
+
+            <p className="mt-7 text-secondary/70 leading-8 text-[15px] max-w-md">
+              Every cup tells a story of craftsmanship, carefully selected beans,
+              precision brewing, and warm hospitality. We don't simply serve coffee
+              — we create memorable experiences worth coming back for.
+            </p>
+
+            {/* Stats */}
+
+            <div className="flex gap-10 mt-10">
+
+              <div>
+                <h3 className="font-serif text-3xl font-black text-primary">
+                  15+
                 </h3>
-                
-                <p className="text-secondary/65 text-xs leading-relaxed max-w-[160px]">
-                  {feature.description}
+                <p className="text-sm text-secondary/60 mt-1">
+                  Coffee Origins
                 </p>
               </div>
-            ))}
+
+              <div>
+                <h3 className="font-serif text-3xl font-black text-primary">
+                  98%
+                </h3>
+                <p className="text-sm text-secondary/60 mt-1">
+                  Happy Guests
+                </p>
+              </div>
+
+            </div>
+
+            {/* CTA */}
+
+            <button className="group mt-12 inline-flex items-center gap-4 bg-primary hover:bg-[#2d4031] text-white rounded-full px-7 py-4 shadow-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl">
+
+              <span className="uppercase tracking-[0.22em] text-xs font-bold">
+                Discover Our Story
+              </span>
+
+              <span className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center group-hover:translate-x-1 transition">
+                <FiArrowRight className="w-4 h-4" />
+              </span>
+
+            </button>
+
           </div>
+
+          {/* ================= RIGHT ================= */}
+
+          <div className="lg:col-span-8">
+
+            <div className="relative rounded-[36px] bg-white border border-[#ECE7E1] shadow-[0_30px_80px_rgba(20,20,20,.05)] overflow-hidden">
+
+              {/* decorative glow */}
+
+              <div className="absolute top-0 right-0 w-60 h-60 bg-primary/5 blur-3xl rounded-full"></div>
+
+              <div className="relative grid sm:grid-cols-2 lg:grid-cols-4">
+
+                {features.map((feature, index) => (
+
+                  <div
+                    key={index}
+                    className="group relative px-8 py-12 border-b sm:border-r border-[#F1ECE7] last:border-r-0 lg:last:border-r-0 last:border-b-0 transition-all duration-500 hover:bg-[#FCFBFA]"
+                  >
+
+                    {/* icon */}
+
+                    <div className="relative mb-8">
+
+                      <div className="absolute inset-0 rounded-full bg-primary/10 blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+                      <div
+                        className="relative w-18 h-18 mx-auto flex items-center justify-center text-primary bg-gradient-to-br from-[#F4F8F4] to-[#E7EFE8] border border-[#E3EBE5] shadow-md transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-1 group-hover:bg-primary group-hover:text-white"
+                        style={{
+                          width: "72px",
+                          height: "72px",
+                          borderRadius:
+                            "58% 42% 60% 40% / 40% 60% 40% 60%",
+                        }}
+                      >
+                        {feature.icon}
+                      </div>
+
+                    </div>
+
+                    <h3 className="font-serif text-[18px] font-bold text-secondary text-center">
+                      {feature.title}
+                    </h3>
+
+                    <p className="mt-4 text-center text-[14px] leading-7 text-secondary/65">
+                      {feature.description}
+                    </p>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>

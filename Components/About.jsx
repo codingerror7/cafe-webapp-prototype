@@ -78,7 +78,7 @@ const About = () => {
             <div className="flex items-center gap-4 mb-7">
               <span className="w-14 h-[2px] bg-primary"></span>
 
-              <span className="uppercase tracking-[0.35em] text-[12px] font-black text-accent">
+              <span className="uppercase tracking-[0.35em] text-[13px] font-black text-accent">
                 Why Choose Us
               </span>
             </div>

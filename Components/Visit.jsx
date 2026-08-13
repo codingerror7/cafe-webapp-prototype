@@ -99,7 +99,7 @@ const Visit = () => {
     <section id="visit" className="py-16 px-4 md:px-8 max-w-7xl mx-auto scroll-mt-24">
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto mb-14 px-2">
-        <span className="text-accent font-sans text-[10px] tracking-[0.25em] font-black uppercase block mb-3">
+        <span className="text-accent font-sans text-[13px] tracking-[0.25em] font-black uppercase block mb-3">
           — VISIT US
         </span>
         <h2 className="font-serif font-black text-3xl md:text-4xl lg:text-[45px] leading-[1.15] text-secondary mb-4 tracking-tight">

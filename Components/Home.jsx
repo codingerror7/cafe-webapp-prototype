@@ -6,7 +6,8 @@ import { FiInstagram, FiFacebook, FiTwitter, FiGlobe, FiArrowRight } from "react
 import Navbar from "./Navbar";
 import Menu from "./Menu";
 import About from "./About";
-import Gallery from "./Whychoose";
+import Process from "./Process";
+import WhyChoose from "./WhyChoose";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
@@ -53,7 +54,7 @@ const Home = () => {
           
           {/* Left Text Column */}
           <div className="lg:col-span-5 flex flex-col items-start text-left z-10 pl-2 md:pl-4">
-            <h1 className="font-serif font-black text-5xl md:text-6xl lg:text-[66px] leading-[1.08] text-secondary mb-6 tracking-tight">
+            <h1 className="font-serif font-black text-5xl md:text-6xl lg:text-[80px] leading-[1.08] text-secondary mb-6 tracking-tight">
               Good days <br />
               start with <br />
               <span className="text-primary italic font-normal">great coffee.</span>
@@ -92,10 +93,10 @@ const Home = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-3">
               {[
-                { icon: <FiInstagram className="w-3.5 h-3.5" />, link: "#" },
-                { icon: <FiFacebook className="w-3.5 h-3.5" />, link: "#" },
-                { icon: <FiTwitter className="w-3.5 h-3.5" />, link: "#" },
-                { icon: <FiGlobe className="w-3.5 h-3.5" />, link: "#" },
+                { icon: <FiInstagram className="w-4.5 h-4.5" />, link: "#" },
+                { icon: <FiFacebook className="w-4.5 h-4.5" />, link: "#" },
+                { icon: <FiTwitter className="w-4.5 h-4.5" />, link: "#" },
+                { icon: <FiGlobe className="w-4.5 h-4.5" />, link: "#" },
               ].map((item, index) => (
                 <a
                   key={index}
@@ -109,9 +110,9 @@ const Home = () => {
           </div>
 
           {/* Right Cup Image Column */}
-          <div className="lg:col-span-7 flex justify-center relative w-full mt-8 lg:mt-0">
+          <div className="lg:col-span-7 flex justify-center relative w-full mt-4 lg:mt-0">
             {/* The main coffee cup image container */}
-            <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[490px] md:h-[490px] flex items-center justify-center">
+            <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[550px] md:h-[520px] flex items-center justify-center">
               
               {/* Soft shadow under saucer */}
               <div className="absolute bottom-[10%] w-[75%] h-[12%] bg-[#2C1E16]/10 rounded-full blur-xl pointer-events-none" />
@@ -243,8 +244,11 @@ const Home = () => {
       {/* About Section (Why Choose Us) */}
       <About />
 
-      {/* Gallery Section */}
-      <Gallery />
+      {/* Coffee Journey / Brewing Process Section */}
+      <Process />
+
+      {/* Why Choose Our Cafe Section */}
+      <WhyChoose />
 
       {/* Contact Section (Coffee Club Newsletter) */}
       <Contact />

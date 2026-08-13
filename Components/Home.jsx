@@ -3,15 +3,15 @@
 import React from "react";
 import Image from "next/image";
 import { FiInstagram, FiFacebook, FiTwitter, FiGlobe, FiArrowRight } from "react-icons/fi";
-import Navbar from "./Navbar";
-import Menu from "./Menu";
-import About from "./About";
-import Process from "./Process";
-import WhyChoose from "./WhyChoose";
-import Contact from "./Contact";
+import Navbar from "./Navbar.jsx";
+import Menu from "./Menu.jsx";
+import About from "./About.jsx";
+import Process from "./Process.jsx";
+import WhyChoose from "./Whychoose.jsx";
+import Contact from "./Contact.jsx";
 import Visit from "./Visit.jsx";
-import Footer from "./Footer";
-import FloatingCTA from "./Floating";
+import Footer from "./Footer.jsx";
+import FloatingCTA from "./Floating.jsx";
 
 // Custom coffee bean decorative SVG
 const CoffeeBean = ({ className }) => (

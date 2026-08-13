@@ -1,1 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Lora", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #1F2E21; /* Rich Olive/Forest Green */
+  --color-secondary: #2C1E16; /* Deep Cocoa/Espresso Brown */
+  --color-accent: #BCA374; /* Warm Gold Accent */
+  --color-bg-light: #FAF6F0; /* Warm Cream Page Background */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-light);
+  color: var(--color-secondary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
